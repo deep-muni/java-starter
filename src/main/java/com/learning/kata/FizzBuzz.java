@@ -10,24 +10,29 @@ public class FizzBuzz {
   }
 
   public String convert(Integer value) {
-    if(value.equals(3)) {
-      return "FizzFizz";
+    if (isMultipleOfThree(value) || isMultipleOfFive(value)) {
+      String prefix = whenDivisibleByThreeOrFive(value);
+
+      if (value.toString().contains("3")) {
+        return prefix + "Fizz";
+      }
+
+      if (value.toString().contains("5")) {
+        return prefix + "Buzz";
+      }
+
+      return prefix;
     }
-    if(value.equals(5)) {
-      return "BuzzBuzz";
-    }
-    if(value.equals(15)) {
-      return "FizzBuzzBuzz";
-    }
+    return value.toString();
+  }
+
+  private String whenDivisibleByThreeOrFive(Integer value) {
     if (isMultipleOfThree(value) && isMultipleOfFive(value)) {
       return "FizzBuzz";
     }
     if (isMultipleOfThree(value)) {
       return "Fizz";
     }
-    if (isMultipleOfFive(value)) {
-      return "Buzz";
-    }
-    return value.toString();
+    return "Buzz";
   }
 }
