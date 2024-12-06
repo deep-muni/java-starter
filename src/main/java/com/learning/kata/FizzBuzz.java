@@ -2,7 +2,7 @@ package com.learning.kata;
 
 public class FizzBuzz {
   public String convert(Integer value) {
-    if (value.equals(3) || value.equals(6)) {
+    if (value % 3 == 0) {
       return "Fizz";
     }
     if (value.equals(5)) {
