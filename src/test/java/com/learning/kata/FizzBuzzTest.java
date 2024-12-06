@@ -3,6 +3,7 @@ package com.learning.kata;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -32,5 +33,10 @@ class FizzBuzzTest {
   @ValueSource(ints = {5, 10})
   void convert_multiple_of_5_to_Buzz(Integer value) {
     assertEquals("Buzz", fizzBuzz.convert(value));
+  }
+
+  @Test
+  void convert_15_to_FizzBuzz() {
+    assertEquals("FizzBuzz", fizzBuzz.convert(15));
   }
 }
