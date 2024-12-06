@@ -49,4 +49,9 @@ class FizzBuzzTest {
   void convert_5_to_BuzzBuzz() {
     assertEquals("BuzzBuzz", fizzBuzz.convert(5));
   }
+
+  @Test
+  void convert_135_to_FizzBuzzFizzBuzz() {
+    assertEquals("FizzBuzzFizzBuzz", fizzBuzz.convert(135));
+  }
 }
