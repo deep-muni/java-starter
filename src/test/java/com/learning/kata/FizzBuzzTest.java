@@ -24,7 +24,7 @@ class FizzBuzzTest {
   }
 
   @ParameterizedTest
-  @ValueSource(ints = {3, 6, 9, 12})
+  @ValueSource(ints = {6, 9, 12})
   void convert_multiple_of_3_to_Fizz(Integer value) {
     assertEquals("Fizz", fizzBuzz.convert(value));
   }
@@ -38,5 +38,10 @@ class FizzBuzzTest {
   @Test
   void convert_15_to_FizzBuzz() {
     assertEquals("FizzBuzz", fizzBuzz.convert(15));
+  }
+
+  @Test
+  void convert_3_to_FizzFizz() {
+    assertEquals("FizzFizz", fizzBuzz.convert(3));
   }
 }
