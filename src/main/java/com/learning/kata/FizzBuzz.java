@@ -1,7 +1,7 @@
 package com.learning.kata;
 
 public class FizzBuzz {
-  public String convert(int i) {
-    return "1";
+  public String convert(Integer value) {
+    return value.toString();
   }
 }
