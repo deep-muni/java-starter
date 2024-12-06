@@ -25,19 +25,19 @@ class FizzBuzzTest {
 
   @ParameterizedTest
   @ValueSource(ints = {6, 9, 12})
-  void convert_multiple_of_3_to_Fizz(Integer value) {
+  void convert_multiple_of_3_and_not_contains_3_to_Fizz(Integer value) {
     assertEquals("Fizz", fizzBuzz.convert(value));
   }
 
   @ParameterizedTest
   @ValueSource(ints = {10})
-  void convert_multiple_of_5_to_Buzz(Integer value) {
+  void convert_multiple_of_5_and_not_contains_5_to_Buzz(Integer value) {
     assertEquals("Buzz", fizzBuzz.convert(value));
   }
 
   @Test
-  void convert_15_to_FizzBuzz() {
-    assertEquals("FizzBuzz", fizzBuzz.convert(15));
+  void convert_15_to_FizzBuzzBuzz() {
+    assertEquals("FizzBuzzBuzz", fizzBuzz.convert(15));
   }
 
   @Test

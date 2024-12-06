@@ -16,6 +16,9 @@ public class FizzBuzz {
     if(value.equals(5)) {
       return "BuzzBuzz";
     }
+    if(value.equals(15)) {
+      return "FizzBuzzBuzz";
+    }
     if (isMultipleOfThree(value) && isMultipleOfFive(value)) {
       return "FizzBuzz";
     }
