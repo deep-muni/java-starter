@@ -17,4 +17,10 @@ class FizzBuzzNumberShould {
     FizzBuzzNumber number = new FizzBuzzNumber(2);
     assertThat(number.convert()).isEqualTo("2");
   }
+
+  @Test
+  void convert_3_to_Fizz() {
+    FizzBuzzNumber number = new FizzBuzzNumber(3);
+    assertThat(number.convert()).isEqualTo("Fizz");
+  }
 }

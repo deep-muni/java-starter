@@ -8,6 +8,9 @@ public class FizzBuzzNumber {
   }
 
   public String convert() {
+    if (number == 3) {
+      return "Fizz";
+    }
     return number.toString();
   }
 }
