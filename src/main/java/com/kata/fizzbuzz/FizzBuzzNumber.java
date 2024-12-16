@@ -8,6 +8,6 @@ public class FizzBuzzNumber {
   }
 
   public String convert() {
-    return "1";
+    return number.toString();
   }
 }
